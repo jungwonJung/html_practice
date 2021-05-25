@@ -1,7 +1,28 @@
 /* 선택자(selector) */
-
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
 
 #header-center {
     margin: 0 auto;
     width: 1080px;
+}
+
+#header-search > h1 {
+    width: 198px;
+    height: 60px;
+    display: inline-block;
+    background: url(./sp_search.png) -4px 10px no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+}
+
+#header-search fieldset {
+    width: 520px;
+    display: inline-block;
 }
